@@ -1,0 +1,58 @@
+/*
+* TOC
+*
+* HEADER
+* - LOGO
+* - MENU
+* - ITEMS MENU
+*/
+
+/* >HEADER */
+.header {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  padding: 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+/* >> LOGO */
+.header__logo {
+  height: 100%;
+  width: 200px;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+}
+
+/* >> ITEMS MENU */
+.header__menu-item {
+  color: #fff;
+  font-size: 16px;
+
+  &:hover {
+    color: green;
+  }
+
+}
+
+/* >> HERO */
+.hero__wrapper {
+  width: 100%;
+  min-height: 100%;
+  padding-top: 100px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  h1{
+    color: #fff;
+  }
+}
