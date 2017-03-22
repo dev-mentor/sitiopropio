@@ -407,6 +407,59 @@ template {
 /*
 * TOC
 *
+* COLORES Y CLASES
+* FUENTES
+*/
+/* >COLORES Y CLASES*/
+.color1 {
+  color: #00000a; }
+
+.color2 {
+  color: #6c6c6c; }
+
+.color3 {
+  color: #fff; }
+
+.color4 {
+  color: #0c2551; }
+
+.color5 {
+  color: #fe8f1e; }
+
+/* >FUENTES */
+@font-face {
+  font-family: 'latoblack';
+  src: url("../fonts/lato-black-webfont.woff2") format("woff2"), url("../fonts/lato-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latobold';
+  src: url("../fonts/lato-bold-webfont.woff2") format("woff2"), url("../fonts/lato-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latolight';
+  src: url("../fonts/lato-light-webfont.woff2") format("woff2"), url("../fonts/lato-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latomedium';
+  src: url("../fonts/lato-medium-webfont.woff2") format("woff2"), url("../fonts/lato-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoregular';
+  src: url("../fonts/lato-regular-webfont.woff2") format("woff2"), url("../fonts/lato-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/*
+* TOC
+*
 * HEADER
 * - LOGO
 * - MENU
@@ -415,7 +468,7 @@ template {
 /* >HEADER */
 .header {
   align-items: center;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   display: flex;
   height: 100px;
@@ -424,6 +477,10 @@ template {
   position: fixed;
   width: 100%;
   z-index: 999; }
+  @media (max-width: 768px) {
+    .header {
+      background-color: #0c2551;
+      flex-direction: column; } }
 
 /* >> LOGO */
 .header__logo {
@@ -434,11 +491,15 @@ template {
     width: 100%; }
 
 /* >> ITEMS MENU */
-.header__menu-item {
+.header__menu-item a {
   color: #fff;
+  font-family: "latoregular";
   font-size: 16px; }
-  .header__menu-item:hover {
-    color: green; }
+  .header__menu-item a:hover {
+    color: #fe8f1e; }
+
+.header__menu-item .active {
+  color: #fe8f1e; }
 
 /* >> HERO */
 .hero__wrapper {
@@ -449,7 +510,11 @@ template {
   display: flex;
   justify-content: center; }
   .hero__wrapper h1 {
-    color: #fff; }
+    color: #fff;
+    font-family: "latolight"; }
+    @media (min-width: 768px) {
+      .hero__wrapper h1 {
+        font-size: 72px; } }
 
 /*
 * TOC
@@ -463,12 +528,17 @@ template {
 
 .section__btn {
   background-color: transparent;
-  border: 1px solid #000 !important;
-  border-radius: 0 !important;
-  font-size: 23px !important;
-  margin-bottom: 40px;
+  font-family: "latomedium";
+  font-size: 24px;
+  margin: 0 auto 30px auto;
   text-transform: uppercase;
   width: 200px; }
+
+.section__btn--blue {
+  box-shadow: 0px 1px 3px #000; }
+
+.section__btn--white {
+  box-shadow: 0px 1px 3px #fff; }
 
 .services__wrapper {
   padding: 30px 0; }
@@ -476,24 +546,34 @@ template {
 .services__box {
   padding: 20px; }
   .services__box .services__img {
-    background-color: red;
     height: 80px;
     margin: 0 auto 15px auto;
     width: 80px; }
   .services__box .services__title {
-    font-weight: 700;
+    font-family: "latobold";
+    font-size: 18px;
     margin-bottom: 30px;
     text-transform: uppercase; }
   .services__box .services__description {
     margin-bottom: 18px; }
     .services__box .services__description .services__description-text1 {
-      font-weight: 500; }
+      font-family: "latomedium";
+      font-size: 16px; }
+
+.services__description-text2,
+.services__list,
+.section__title {
+  font-family: "latolight";
+  font-size: 16px; }
 
 .services__list {
   margin: 0;
   padding: 0; }
 
 /* >>CUSTOMERS*/
+.customers {
+  background-color: #fe8f1e; }
+
 .customers__box {
   background-color: red;
   height: 150px;
@@ -501,18 +581,57 @@ template {
   width: 100%; }
 
 /* >>CONTACT*/
+.contact {
+  background-color: #fff; }
+
+.contact__title {
+  color: #6c6c6c;
+  font-family: "latolight";
+  font-size: 14px; }
+
+.contact__form input {
+  border: none;
+  border-bottom: 1px solid #6c6c6c;
+  border-radius: 0;
+  font-family: "latolight";
+  font-size: 14px; }
+
 .contact__address {
-  font-size: 15px;
+  color: #6c6c6c;
+  font-family: "latolight";
+  font-size: 12px;
   margin-top: 40px; }
   .contact__address p {
     line-height: 2px; }
 
+.contact__send {
+  background-color: #fe8f1e;
+  border-radius: 0 !important;
+  color: #fff;
+  height: 30px;
+  padding: 0 !important;
+  text-transform: uppercase;
+  width: 100px; }
+
+@media (max-width: 768px) {
+  .contact__map-wrapper {
+    height: 300px;
+    margin-bottom: 30px;
+    order: -1; } }
+
 .contact__map {
-  width: 100%;
+  background-color: gray;
   height: 100%;
-  background-color: gray; }
+  width: 100%; }
 
 /* >>FOOTER*/
 .footer {
-  padding: 40px;
-  background-color: blue; }
+  background-color: #0c2551;
+  color: #fff;
+  font-family: "latolight";
+  padding: 40px; }
+
+.services,
+.customers,
+.contact {
+  padding: 50px 0; }

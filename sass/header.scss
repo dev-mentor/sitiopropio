@@ -10,7 +10,7 @@
 /* >HEADER */
 .header {
   align-items: center;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   display: flex;
   height: 100px;
@@ -19,6 +19,12 @@
   position: fixed;
   width: 100%;
   z-index: 999;
+
+  @media (max-width:768px) {
+    background-color: $color4;
+    flex-direction: column;
+  }
+
 }
 
 /* >> LOGO */
@@ -35,11 +41,19 @@
 
 /* >> ITEMS MENU */
 .header__menu-item {
-  color: #fff;
-  font-size: 16px;
+  a {
+    color: $color3;
+    font-family: $lato_regular;
+    font-size: 16px;
 
-  &:hover {
-    color: green;
+    &:hover {
+      color: $color5;
+    }
+
+  }
+
+  .active {
+    color: $color5;
   }
 
 }
@@ -52,7 +66,15 @@
   background-color: blue;
   display: flex;
   justify-content: center;
-  h1{
-    color: #fff;
+
+  h1 {
+    color: $color3;
+    font-family: $lato_light;
+
+    @media (min-width:768px) {
+      font-size: 72px;
+    }
+
   }
+
 }

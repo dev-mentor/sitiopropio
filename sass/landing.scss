@@ -4,6 +4,7 @@
 * - SERVICES
 * - CUSTOMERS
 */
+
 /*  >>SERVICES */
 .section__title {
   margin-bottom: 40px;
@@ -11,12 +12,19 @@
 
 .section__btn {
   background-color: transparent;
-  border: 1px solid #000 !important;
-  border-radius: 0 !important;
-  font-size: 23px !important;
-  margin-bottom: 40px;
+  font-family: $lato_medium;
+  font-size: 24px;
+  margin: 0 auto 30px auto;
   text-transform: uppercase;
   width: 200px;
+}
+
+.section__btn--blue {
+  box-shadow: 0px 1px 3px #000;
+}
+
+.section__btn--white {
+  box-shadow: 0px 1px 3px #fff;
 }
 
 .services__wrapper {
@@ -27,14 +35,14 @@
   padding: 20px;
 
   .services__img {
-    background-color: red;
     height: 80px;
     margin: 0 auto 15px auto;
     width: 80px;
   }
 
   .services__title {
-    font-weight: 700;
+    font-family: $lato_bold;
+    font-size: 18px;
     margin-bottom: 30px;
     text-transform: uppercase;
   }
@@ -43,11 +51,19 @@
     margin-bottom: 18px;
 
     .services__description-text1 {
-      font-weight: 500;
+      font-family: $lato_medium;
+      font-size: 16px;
     }
 
   }
 
+}
+
+.services__description-text2,
+.services__list,
+.section__title {
+  font-family: $lato_light;
+  font-size: 16px;
 }
 
 .services__list {
@@ -56,6 +72,10 @@
 }
 
 /* >>CUSTOMERS*/
+.customers {
+  background-color: $color5;
+}
+
 .customers__box {
   background-color: red;
   height: 150px;
@@ -64,22 +84,73 @@
 }
 
 /* >>CONTACT*/
-.contact__address{
-  font-size: 15px;
+.contact {
+  background-color: $color3;
+}
+
+.contact__title {
+  color: $color2;
+  font-family: $lato_light;
+  font-size: 14px;
+}
+
+.contact__form {
+  input {
+    border: none;
+    border-bottom: 1px solid $color2;
+    border-radius: 0;
+    font-family: $lato_light;
+    font-size: 14px;
+  }
+
+}
+
+.contact__address {
+  color: $color2;
+  font-family: $lato_light;
+  font-size: 12px;
   margin-top: 40px;
-  p{
+
+  p {
     line-height: 2px;
   }
+
 }
-.contact__map{
-  width: 100%;
-  height: 100%;
+
+.contact__send {
+  background-color: $color5;
+  border-radius: 0 !important;
+  color: $color3;
+  height: 30px;
+  padding: 0 !important;
+  text-transform: uppercase;
+  width: 100px;
+}
+
+.contact__map-wrapper {
+    @media (max-width:768px) {
+      height: 300px;
+      margin-bottom: 30px;
+      order: -1;
+    }
+}
+
+.contact__map {
   background-color: gray;
+  height: 100%;
+  width: 100%;
 }
 
 /* >>FOOTER*/
-.footer{
+.footer {
+  background-color: $color4;
+  color: $color3;
+  font-family: $lato_light;
   padding: 40px;
-  background-color: blue;
+}
 
+.services,
+.customers,
+.contact {
+  padding: 50px 0;
 }
