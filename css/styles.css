@@ -464,11 +464,15 @@ template {
 * - LOGO
 * - MENU
 * - ITEMS MENU
+* - HERO
+* - CAROUSEL
+* -- BACKGROUNDS SLIDER
+* -- PAGINATION
 */
 /* >HEADER */
 .header {
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(12, 37, 81, 0.7);
   box-sizing: border-box;
   display: flex;
   height: 100px;
@@ -480,15 +484,38 @@ template {
   @media (max-width: 768px) {
     .header {
       background-color: #0c2551;
-      flex-direction: column; } }
+      flex-direction: column;
+      height: 122px; } }
 
 /* >> LOGO */
 .header__logo {
   height: 100%;
-  width: 200px; }
+  text-align: center;
+  width: 187px; }
+  @media (max-width: 768px) {
+    .header__logo {
+      height: 37px;
+      margin-bottom: 10px; } }
   .header__logo img {
     height: 100%;
     width: 100%; }
+  .header__logo p {
+    color: #fff;
+    font-family: "latoregular";
+    font-size: 11px; }
+    @media (max-width: 768px) {
+      .header__logo p {
+        display: none; } }
+
+/* >>MENU*/
+.header__menu {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end; }
+  @media (max-width: 768px) {
+    .header__menu {
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      width: 100%; } }
 
 /* >> ITEMS MENU */
 .header__menu-item a {
@@ -500,21 +527,59 @@ template {
 
 .header__menu-item .active {
   color: #fe8f1e; }
+  @media (max-width: 768px) {
+    .header__menu-item .active {
+      border-bottom: 5px solid #fe8f1e; } }
 
 /* >> HERO */
 .hero__wrapper {
-  width: 100%;
-  min-height: 100%;
-  padding-top: 100px;
-  background-color: blue;
-  display: flex;
-  justify-content: center; }
+  height: auto;
+  width: 100%; }
   .hero__wrapper h1 {
     color: #fff;
-    font-family: "latolight"; }
+    font-family: "latolight";
+    z-index: 1; }
     @media (min-width: 768px) {
       .hero__wrapper h1 {
         font-size: 72px; } }
+
+/* >>CAROUSEL */
+/* >>>BACKGROUNDS SLIDER*/
+.hero__slider {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%; }
+  .hero__slider img {
+    height: 100vh;
+    width: 100%; }
+
+.carousel__opacity {
+  align-items: center;
+  background-image: url("../images/opacity.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+
+/* >>>PAGINATION */
+.hero__pagination {
+  -moz-border-radius: 50%;
+  -o-oborder-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  height: 10px !important;
+  max-width: 10px !important; }
+
+.carousel-indicators .active {
+  background-color: #00ef95 !important; }
 
 /*
 * TOC
@@ -575,10 +640,69 @@ template {
   background-color: #fe8f1e; }
 
 .customers__box {
-  background-color: red;
-  height: 150px;
-  margin-bottom: 25px;
-  width: 100%; }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+  @media (min-width: 320px) {
+    .customers__box {
+      float: none;
+      height: 225px;
+      margin: 0 auto 15px auto;
+      width: 275px; } }
+  @media (min-width: 556px) {
+    .customers__box {
+      float: left;
+      height: 200px;
+      margin: 0 20px 35px 20px;
+      width: 215px; } }
+  @media (min-width: 768px) {
+    .customers__box {
+      float: left;
+      height: 100px;
+      margin: 0 10px 15px 10px;
+      width: 22%; } }
+  @media (min-width: 992px) {
+    .customers__box {
+      float: left;
+      height: 142px;
+      margin: 0 22px 33px 22px;
+      width: 142px; } }
+  @media (min-width: 1200px) {
+    .customers__box {
+      float: left;
+      height: 142px;
+      margin: 0 22px 33px 22px;
+      width: 176px; } }
+
+.customers_1 {
+  background-image: url("../images/logo-tps.gif"); }
+
+.customers_2 {
+  background-image: url("../images/logo-quintec.gif"); }
+
+.customers_3 {
+  background-image: url("../images/logo-viajes-falabella.gif"); }
+
+.customers_4 {
+  background-image: url("../images/logo-cmr.jpg"); }
+
+.customers_5 {
+  background-image: url("../images/logo-dbnet.jpg"); }
+
+.customers_6 {
+  background-image: url("../images/Mintra.png"); }
+
+.customers_7 {
+  background-image: url("../images/logo-puerto-mejillones.jpg"); }
+
+.customers_8 {
+  background-image: url("../images/logo-sitrans.gif"); }
+
+.customers_9 {
+  background-image: url("../images/logo-red-mentores.jpg"); }
+
+.customers_10 {
+  background-image: url("../images/logo-puerto-angamos.jpg"); }
 
 /* >>CONTACT*/
 .contact {
@@ -594,13 +718,17 @@ template {
   border-bottom: 1px solid #6c6c6c;
   border-radius: 0;
   font-family: "latolight";
-  font-size: 14px; }
+  font-size: 14px;
+  padding-left: 0; }
 
 .contact__address {
   color: #6c6c6c;
   font-family: "latolight";
   font-size: 12px;
   margin-top: 40px; }
+  @media (max-width: 768px) {
+    .contact__address {
+      display: none; } }
   .contact__address p {
     line-height: 2px; }
 
@@ -630,8 +758,19 @@ template {
   color: #fff;
   font-family: "latolight";
   padding: 40px; }
+  @media (max-width: 768px) {
+    .footer {
+      background-color: transparent;
+      color: #6c6c6c;
+      font-size: 14px;
+      padding: 10px; } }
+  .footer p {
+    margin-bottom: 0; }
 
 .services,
 .customers,
 .contact {
   padding: 50px 0; }
+
+.section__paddingt {
+  padding-top: 110px; }

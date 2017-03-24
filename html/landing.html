@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dev mentor</title>
+    <link rel='stylesheet' href='../css/styles.css'/>
+    <link rel='stylesheet' href='../css/bootstrap/bootstrap.css'/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo"><img src="../images/logo.png" alt="">
+        <p>Especialistas en Tecnologías Microsoft</p>
+      </div>
+      <ul class="nav header__menu">
+        <li class="nav-item header__menu-item js-item1">
+          <a class="nav-link active" href="#inicio">Inicio</a>
+        </li>
+        <li class="nav-item header__menu-item js-item2">
+          <a class="nav-link" href="#servicios">Servicios</a>
+        </li>
+        <li class="nav-item header__menu-item js-item3">
+          <a class="nav-link" href="#clientes">Clientes</a>
+        </li>
+        <li class="nav-item header__menu-item js-item4">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </header>
+    <section id="inicio" class="hero__wrapper text-center">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="hero__pagination active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1" class="hero__pagination"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2" class="hero__pagination"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3" class="hero__pagination"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active hero__slider">
+            <div class="carousel__opacity">
+              <h1 class="hero__text1">Desde 2007 desarrollando soluciones para empresas de diversa índole</h1>
+            </div>
+            <img src="../images/desde.jpg" alt="">
+          </div>
+          <div class="carousel-item hero__slider">
+            <div class="carousel__opacity">
+              <h1 class="hero__text1">Equipo profesional con alto grado de especialización</h1>
+            </div>
+            <img src="../images/equipo.jpg" alt="">
+          </div>
+          <div class="carousel-item hero__slider">
+            <div class="carousel__opacity">
+              <h1 class="hero__text1">Microsoft Partner</h1>
+            </div>
+            <img src="../images/partner.jpg" alt="">
+          </div>
+          <div class="carousel-item hero__slider">
+            <div class="carousel__opacity">
+              <h1 class="hero__text1">Análisis y Soluciones <br> a medida de cada necesidad</h1>
+            </div>
+            <img src="../images/bg1.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="servicios" class="services__wrapper text-center m-5">
+      <div class="container">
+        <div class="section__btn section__btn--blue">Servicios</div>
+        <p class="section__title color1">Nuestros desarrollos de orientan en el diseño de soluciones empresariales con énfasis en:</p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="services__box">
+              <div class="services__img"><img src="../images/analisis.svg" alt=""></div>
+              <div class="services__title"><h5>Análisis y diseño</h5></div>
+              <div class="services__description">
+                <p class="services__description-text1">Análisis de requerimientos y diseño de aplicaciones</p>
+                <p class="services__description-text2">Siguiendo una metodología acreditada, se aplican las siguientes etapas:</p>
+              </div>
+              <ul class="services__list">
+                <li class="services__list-item">Diagnóstico inicial.</li>
+                <li class="services__list-item">Relevamiento de requerimientos.</li>
+                <li class="services__list-item">Diseño de aplicaciones basados en UML y la contrucción de prototipos.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="services__box">
+              <div class="services__img"><img src="../images/desarrollo.svg" alt=""></div>
+              <div class="services__title"><h5>Desarrollo</h5></div>
+              <div class="services__description">
+                <p class="services__description-text1">Aplicaciones en las últimas tecnologías de plataformas Microsoft</p>
+                <p class="services__description-text2">Utilizando las últimas tecnologías propuestas por Microsoft:</p>
+              </div>
+              <ul class="services__list">
+                <li class="services__list-item">Desarrollo de aplicaciones para la Web.</li>
+                <li class="services__list-item">Desarrollo de aplicaciones de escritorio y servicios Windows.</li>
+                <li class="services__list-item">Utilización de los últimos patrones de diseños implementados sobre plataforma Microsoft.</li>
+                <li class="services__list-item">Gran experiencia en desarrollo .NET basado en profesionales altamente capacitados en esta tecnología.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="services__box">
+              <div class="services__img"><img src="../images/mentoring.svg" alt=""></div>
+              <div class="services__title"><h5>Mentoring</h5></div>
+              <div class="services__description">
+                <p class="services__description-text1">Capacitaciones, acompañando en el desarrollo de proyectos</p>
+                <p class="services__description-text2">Basado en el alto nivel de capacitación de nuestros ingenieros podemos ofrecer:</p>
+              </div>
+              <ul class="services__list">
+                <li class="services__list-item">Mentorias para el desarrollo de aplicaciones .NET.</li>
+                <li class="services__list-item">En estas mentorias acompañamos a ingenieros de su empresa en el desarrollo de proyectos en tecnología .NET, permitiendo el adecuado desarrollo del proyecto y la transferencia tecnológica al personal de la empresa.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="clientes" class=" customers">
+      <div class="container text-center">
+        <div class="section__btn section__btn--white color3">clientes</div>
+        <p class="section__title color3">Nos han confiado sus proyectos:</p>
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="customers__box customers_1">
+              <img src="" alt="">
+            </div>
+            <div class="customers__box customers_2">
+              <img src="" alt="">
+            </div>
+            <div class="customers__box customers_3">
+              <img src="" alt="">
+            </div>
+            <div class="customers__box customers_4">
+              <img src="" alt="">
+            </div>
+            <div class="customers__box customers_5">
+              <img src="" alt="">
+            </div>
+            <div class="customers__box customers_6">
+              <img src="" alt="">
+            </div>
+            <div class="customers__box customers_7">
+              <img src="" alt="">
+            </div>
+            <div class="customers__box customers_8">
+              <img src="" alt="">
+            </div>
+            <div class="customers__box customers_9">
+              <img src="" alt="">
+            </div>
+            <div class="customers__box customers_10">
+              <img src="" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contacto" class="contact">
+      <div class="container text-center">
+        <div class="section__btn section__btn--blue">contacto</div>
+        <div class="row">
+          <div class="col-md-5 text-left">
+            <p class="contact__title color1">Escríbenos y a la brevedad te responderemos:</p>
+            <form action="" class="contact__form text-right">
+              
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nombre">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Mensaje">
+              </div>
+              <button class="btn contact__send">Enviar</button>
+              <div class="contact__address text-right">
+                <p>Av. Providencia 1939 Of. 32-A</p>
+                <p>Providencia - Santiago</p>
+                <p>Teléfono: 2 3224 6331</p>
+                <p>contacto@dev-mentor.com</p>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-7 contact__map-wrapper">
+            <div class="contact__map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container text-center">
+        <p>Av. Providencia 1939 Of. 32-A &#183;
+          Providencia &#183;
+          Santiago &#183;
+          Teléfono: 2 3224 6331 &#183;
+        contacto@dev-mentor.com</p>
+        <p>Copyright &copy; 2016 Dev-Mentor</p>
+      </div>
+    </footer>
+  </body>
+</html>

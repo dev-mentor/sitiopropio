@@ -24,7 +24,7 @@
 }
 
 .section__btn--white {
-  box-shadow: 0px 1px 3px #fff;
+box-shadow: 0px 1px 3px $color3;
 }
 
 .services__wrapper {
@@ -77,10 +77,85 @@
 }
 
 .customers__box {
-  background-color: red;
-  height: 150px;
-  margin-bottom: 25px;
-  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @media (min-width:320px) {
+    float: none;
+    height: 225px;
+    margin: 0 auto 15px auto;
+    width: 275px;
+  }
+
+  @media (min-width:556px) {
+    float: left;
+    height: 200px;
+    margin: 0 20px 35px 20px;
+    width: 215px;
+  }
+
+  @media (min-width:768px) {
+    float: left;
+    height: 100px;
+    margin: 0 10px 15px 10px;
+    width: 22%;
+  }
+
+  @media (min-width:992px) {
+    float: left;
+    height: 142px;
+    margin: 0 22px 33px 22px;
+    width: 142px;
+  }
+
+  @media (min-width:1200px) {
+    float: left;
+    height: 142px;
+    margin: 0 22px 33px 22px;
+    width: 176px;
+  }
+
+}
+
+.customers_1 {
+  background-image: url('../images/logo-tps.gif');
+}
+
+.customers_2 {
+  background-image: url('../images/logo-quintec.gif');
+}
+
+.customers_3 {
+  background-image: url('../images/logo-viajes-falabella.gif');
+}
+
+.customers_4 {
+  background-image: url('../images/logo-cmr.jpg');
+}
+
+.customers_5 {
+  background-image: url('../images/logo-dbnet.jpg');
+}
+
+.customers_6 {
+  background-image: url('../images/Mintra.png');
+}
+
+.customers_7 {
+  background-image: url('../images/logo-puerto-mejillones.jpg');
+}
+
+.customers_8 {
+  background-image: url('../images/logo-sitrans.gif');
+}
+
+.customers_9 {
+  background-image: url('../images/logo-red-mentores.jpg');
+}
+
+.customers_10 {
+  background-image: url('../images/logo-puerto-angamos.jpg');
 }
 
 /* >>CONTACT*/
@@ -101,6 +176,7 @@
     border-radius: 0;
     font-family: $lato_light;
     font-size: 14px;
+    padding-left: 0;
   }
 
 }
@@ -110,6 +186,10 @@
   font-family: $lato_light;
   font-size: 12px;
   margin-top: 40px;
+
+  @media (max-width:768px) {
+    display: none;
+  }
 
   p {
     line-height: 2px;
@@ -128,11 +208,12 @@
 }
 
 .contact__map-wrapper {
-    @media (max-width:768px) {
-      height: 300px;
-      margin-bottom: 30px;
-      order: -1;
-    }
+  @media (max-width:768px) {
+    height: 300px;
+    margin-bottom: 30px;
+    order: -1;
+  }
+
 }
 
 .contact__map {
@@ -147,10 +228,26 @@
   color: $color3;
   font-family: $lato_light;
   padding: 40px;
+
+  @media (max-width:768px) {
+    background-color: transparent;
+    color: $color2;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
 }
 
 .services,
 .customers,
 .contact {
   padding: 50px 0;
+}
+
+.section__paddingt{
+  padding-top: 110px;
 }
