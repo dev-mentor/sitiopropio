@@ -1,0 +1,253 @@
+/*
+* TOC
+*
+* - SERVICES
+* - CUSTOMERS
+*/
+
+/*  >>SERVICES */
+.section__title {
+  margin-bottom: 40px;
+}
+
+.section__btn {
+  background-color: transparent;
+  font-family: $lato_medium;
+  font-size: 24px;
+  margin: 0 auto 30px auto;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+.section__btn--blue {
+  box-shadow: 0px 1px 3px #000;
+}
+
+.section__btn--white {
+box-shadow: 0px 1px 3px $color3;
+}
+
+.services__wrapper {
+  padding: 30px 0;
+}
+
+.services__box {
+  padding: 20px;
+
+  .services__img {
+    height: 80px;
+    margin: 0 auto 15px auto;
+    width: 80px;
+  }
+
+  .services__title {
+    font-family: $lato_bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  .services__description {
+    margin-bottom: 18px;
+
+    .services__description-text1 {
+      font-family: $lato_medium;
+      font-size: 16px;
+    }
+
+  }
+
+}
+
+.services__description-text2,
+.services__list,
+.section__title {
+  font-family: $lato_light;
+  font-size: 16px;
+}
+
+.services__list {
+  margin: 0;
+  padding: 0;
+}
+
+/* >>CUSTOMERS*/
+.customers {
+  background-color: $color5;
+}
+
+.customers__box {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @media (min-width:320px) {
+    float: none;
+    height: 225px;
+    margin: 0 auto 15px auto;
+    width: 275px;
+  }
+
+  @media (min-width:556px) {
+    float: left;
+    height: 200px;
+    margin: 0 20px 35px 20px;
+    width: 215px;
+  }
+
+  @media (min-width:768px) {
+    float: left;
+    height: 100px;
+    margin: 0 10px 15px 10px;
+    width: 22%;
+  }
+
+  @media (min-width:992px) {
+    float: left;
+    height: 142px;
+    margin: 0 22px 33px 22px;
+    width: 142px;
+  }
+
+  @media (min-width:1200px) {
+    float: left;
+    height: 142px;
+    margin: 0 22px 33px 22px;
+    width: 176px;
+  }
+
+}
+
+.customers_1 {
+  background-image: url('../images/logo-tps.gif');
+}
+
+.customers_2 {
+  background-image: url('../images/logo-quintec.gif');
+}
+
+.customers_3 {
+  background-image: url('../images/logo-viajes-falabella.gif');
+}
+
+.customers_4 {
+  background-image: url('../images/logo-cmr.jpg');
+}
+
+.customers_5 {
+  background-image: url('../images/logo-dbnet.jpg');
+}
+
+.customers_6 {
+  background-image: url('../images/Mintra.png');
+}
+
+.customers_7 {
+  background-image: url('../images/logo-puerto-mejillones.jpg');
+}
+
+.customers_8 {
+  background-image: url('../images/logo-sitrans.gif');
+}
+
+.customers_9 {
+  background-image: url('../images/logo-red-mentores.jpg');
+}
+
+.customers_10 {
+  background-image: url('../images/logo-puerto-angamos.jpg');
+}
+
+/* >>CONTACT*/
+.contact {
+  background-color: $color3;
+}
+
+.contact__title {
+  color: $color2;
+  font-family: $lato_light;
+  font-size: 14px;
+}
+
+.contact__form {
+  input {
+    border: none;
+    border-bottom: 1px solid $color2;
+    border-radius: 0;
+    font-family: $lato_light;
+    font-size: 14px;
+    padding-left: 0;
+  }
+
+}
+
+.contact__address {
+  color: $color2;
+  font-family: $lato_light;
+  font-size: 12px;
+  margin-top: 40px;
+
+  @media (max-width:768px) {
+    display: none;
+  }
+
+  p {
+    line-height: 2px;
+  }
+
+}
+
+.contact__send {
+  background-color: $color5;
+  border-radius: 0 !important;
+  color: $color3;
+  height: 30px;
+  padding: 0 !important;
+  text-transform: uppercase;
+  width: 100px;
+}
+
+.contact__map-wrapper {
+  @media (max-width:768px) {
+    height: 300px;
+    margin-bottom: 30px;
+    order: -1;
+  }
+
+}
+
+.contact__map {
+  background-color: gray;
+  height: 100%;
+  width: 100%;
+}
+
+/* >>FOOTER*/
+.footer {
+  background-color: $color4;
+  color: $color3;
+  font-family: $lato_light;
+  padding: 40px;
+
+  @media (max-width:768px) {
+    background-color: transparent;
+    color: $color2;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+}
+
+.services,
+.customers,
+.contact {
+  padding: 50px 0;
+}
+
+.section__paddingt{
+  padding-top: 110px;
+}

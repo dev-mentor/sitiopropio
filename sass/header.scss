@@ -1,0 +1,164 @@
+/*
+* TOC
+*
+* HEADER
+* - LOGO
+* - MENU
+* - ITEMS MENU
+* - HERO
+* - CAROUSEL
+* -- BACKGROUNDS SLIDER
+* -- PAGINATION
+*/
+
+/* >HEADER */
+.header {
+  align-items: center;
+  background-color: rgba(12, 37, 81, 0.7);
+  box-sizing: border-box;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  padding: 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+
+  @media (max-width:768px) {
+    background-color: $color4;
+    flex-direction: column;
+    height: 122px;
+  }
+
+}
+
+/* >> LOGO */
+.header__logo {
+  height: 100%;
+  text-align: center;
+  width: 187px;
+
+  @media (max-width:768px) {
+    height: 37px;
+    margin-bottom: 10px;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  p {
+    color: $color3;
+    font-family: $lato_regular;
+    font-size: 11px;
+
+    @media (max-width:768px) {
+      display: none;
+    }
+
+  }
+
+}
+
+/* >>MENU*/
+.header__menu {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+
+  @media (max-width:768px) {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+}
+
+/* >> ITEMS MENU */
+.header__menu-item {
+  a {
+    color: $color3;
+    font-family: $lato_regular;
+    font-size: 16px;
+
+    &:hover {
+      color: $color5;
+    }
+
+  }
+
+  .active {
+    color: $color5;
+
+    @media (max-width:768px) {
+      border-bottom: 5px solid $color5;
+    }
+
+  }
+
+}
+
+/* >> HERO */
+.hero__wrapper {
+  height: auto;
+  width: 100%;
+
+  h1 {
+    color: $color3;
+    font-family: $lato_light;
+    z-index: 1;
+
+    @media (min-width:768px) {
+      font-size: 72px;
+    }
+
+  }
+
+}
+
+/* >>CAROUSEL */
+
+/* >>>BACKGROUNDS SLIDER*/
+.hero__slider {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+
+  img {
+    height: 100vh;
+    width: 100%;
+
+  }
+
+}
+
+.carousel__opacity {
+  align-items: center;
+  background-image: url('../images/opacity.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* >>>PAGINATION */
+.hero__pagination {
+  -moz-border-radius: 50%;
+  -o-oborder-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  height: 10px !important;
+  max-width: 10px !important;
+}
+
+.carousel-indicators .active{
+  background-color: #00ef95 !important;
+}
