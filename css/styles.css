@@ -475,9 +475,9 @@ template {
   background-color: rgba(12, 37, 81, 0.7);
   box-sizing: border-box;
   display: flex;
-  height: 100px;
+  height: 70px;
   justify-content: space-between;
-  padding: 30px;
+  padding: 10px;
   position: fixed;
   width: 100%;
   z-index: 999; }
@@ -485,16 +485,19 @@ template {
     .header {
       background-color: #0c2551;
       flex-direction: column;
-      height: 122px; } }
+      height: 102px;
+      padding: 10px 10px 0 10px; } }
 
 /* >> LOGO */
 .header__logo {
-  height: 100%;
+  height: 30px;
   text-align: center;
+  margin-top: -10px;
   width: 187px; }
   @media (max-width: 768px) {
     .header__logo {
       height: 37px;
+      margin-top: 0;
       margin-bottom: 10px; } }
   .header__logo img {
     height: 100%;
@@ -564,6 +567,7 @@ template {
   justify-content: center;
   left: 0;
   opacity: 0.9;
+  padding: 0 15px;
   position: absolute;
   top: 0;
   width: 100%;
@@ -605,9 +609,10 @@ template {
 .section__btn--white {
   box-shadow: 0px 1px 3px #fff; }
 
-.services__wrapper {
-  padding: 30px 0; }
-
+/* .services__wrapper {
+  padding: 30px 0;
+}
+ */
 .services__box {
   padding: 20px; }
   .services__box .services__img {
@@ -767,17 +772,17 @@ template {
   .footer p {
     margin-bottom: 0; }
 
-.services,
+.services__wrapper,
 .customers,
 .contact {
   min-height: 100vh;
-  padding: 100px 0; }
+  padding: 72px 0; }
   @media (max-width: 768px) {
-    .services,
+    .services__wrapper,
     .customers,
     .contact {
       min-height: auto;
-      padding: 122px 0; } }
+      padding: 102px 0 50px 0; } }
 
 .section__paddingt {
   padding-top: 110px; }
