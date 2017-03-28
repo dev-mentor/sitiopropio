@@ -27,10 +27,10 @@
   box-shadow: 0px 1px 3px $color3;
 }
 
-.services__wrapper {
+/* .services__wrapper {
   padding: 30px 0;
 }
-
+ */
 .services__box {
   padding: 20px;
 
@@ -242,19 +242,15 @@
 
 }
 
-.services,
+.services__wrapper,
 .customers,
 .contact {
   min-height: 100vh;
-  padding: 100px 0;
+  padding: 72px 0;
 
   @media (max-width:768px) {
     min-height: auto;
-    padding: 122px 0;
+    padding: 102px 0 50px 0;
   }
 
-}
-
-.section__paddingt {
-  padding-top: 110px;
 }
